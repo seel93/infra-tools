@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/oystein.seel/work/plattform/infra-tools/dotnet_app/dotnet_app.csproj": {}
+  },
+  "projects": {
+    "/Users/oystein.seel/work/plattform/infra-tools/dotnet_app/dotnet_app.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oystein.seel/work/plattform/infra-tools/dotnet_app/dotnet_app.csproj",
+        "projectName": "dotnet_app",
+        "projectPath": "/Users/oystein.seel/work/plattform/infra-tools/dotnet_app/dotnet_app.csproj",
+        "packagesPath": "/Users/oystein.seel/.nuget/packages/",
+        "outputPath": "/Users/oystein.seel/work/plattform/infra-tools/dotnet_app/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oystein.seel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/nix/store/9746ljl92xb5wy0cjndpnmq45fvy857n-dotnet-sdk-6.0.422/sdk/6.0.422/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

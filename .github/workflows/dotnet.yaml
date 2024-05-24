@@ -22,13 +22,13 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./dotnet
+        run: dotnet restore ./dotnet_app
 
       - name: Build
-        run: dotnet build ./dotnet --no-restore --configuration Release
+        run: dotnet build ./dotnet_app --no-restore --configuration Release
 
       - name: Publish
-        run: dotnet publish ./dotnet --no-build --configuration Release --output ./dotnet/out
+        run: dotnet publish ./dotnet_app --no-build --configuration Release --output ./dotnet_app/out
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -42,6 +42,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./dotnet
+          context: ./dotnet_app
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/dotnet:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/dotnet_app:latest

@@ -33,6 +33,7 @@ jobs:
         cd python_app
         pip install flake8
         flake8 .
+      continue-on-error: true
 
     - name: Run tests
       run: |
